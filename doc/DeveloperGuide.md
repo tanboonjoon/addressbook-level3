@@ -70,6 +70,16 @@ default | minimize chance of someone else seeing them by accident
 4. AddressBook deletes the person <br>
 Use case ends.
 
+#### Use case: Rename tag
+1.User will request to edit tag
+2.Addressbook will show a list of tags available for changing
+4.User will request to change a tags from the lists
+5.Addressbook will prompt for new name
+6.User will enter new name for the tag
+7.Addressbook will change the tag name
+8.Addressbook will show the 'oldname change to newname'
+Use case ends.
+
 **Extensions**
 
 2a. The list is empty
