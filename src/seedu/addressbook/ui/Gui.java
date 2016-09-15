@@ -25,6 +25,7 @@ public class Gui {
     private MainWindow mainWindow;
     private String version;
 
+
     public Gui(Logic logic, String version) {
         this.logic = logic;
         this.version = version;
@@ -40,9 +41,12 @@ public class Gui {
         loader.setLocation(Main.class.getResource("ui" + File.separator + "mainwindow.fxml"));
         stage.setTitle(version);
         stage.setScene(new Scene(loader.load(), INITIAL_WINDOW_WIDTH, INITIAL_WINDOW_HEIGHT));
+        
 
+        
         Image icon = new Image(getClass().getResourceAsStream("addressbook.png"));
         stage.getIcons().add(icon);
+        
         stage.show();
         MainWindow mainWindow = loader.getController();
         mainWindow.setLogic(logic);
