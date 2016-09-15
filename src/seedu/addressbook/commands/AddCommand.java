@@ -23,7 +23,7 @@ public class AddCommand extends Command {
 
     public static final String MESSAGE_SUCCESS = "New person added: %1$s";
     public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book";
-
+    public static final boolean isMutable = true;
     private final Person toAdd;
 
     /**
@@ -66,5 +66,11 @@ public class AddCommand extends Command {
             return new CommandResult(MESSAGE_DUPLICATE_PERSON);
         }
     }
+
+	@Override
+	public boolean isMutating() {
+		// TODO Auto-generated method stub
+		return isMutable;
+	}
 
 }

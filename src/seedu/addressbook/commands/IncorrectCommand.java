@@ -7,7 +7,7 @@ package seedu.addressbook.commands;
 public class IncorrectCommand extends Command{
 
     public final String feedbackToUser;
-
+    public static final boolean isMutable = false;
     public IncorrectCommand(String feedbackToUser){
         this.feedbackToUser = feedbackToUser;
     }
@@ -16,5 +16,11 @@ public class IncorrectCommand extends Command{
     public CommandResult execute() {
         return new CommandResult(feedbackToUser);
     }
+
+	@Override
+	public boolean isMutating() {
+		// TODO Auto-generated method stub
+		return isMutable;
+	}
 
 }

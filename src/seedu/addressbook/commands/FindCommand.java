@@ -11,7 +11,7 @@ import java.util.*;
 public class FindCommand extends Command {
 
     public static final String COMMAND_WORD = "find";
-
+    public static final boolean isMutable = false;
     public static final String MESSAGE_USAGE = COMMAND_WORD + ":\n" + "Finds all persons whose names contain any of "
             + "the specified keywords (case-sensitive) and displays them as a list with index numbers.\n\t"
             + "Parameters: KEYWORD [MORE_KEYWORDS]...\n\t"
@@ -52,5 +52,11 @@ public class FindCommand extends Command {
         }
         return matchedPersons;
     }
+
+	@Override
+	public boolean isMutating() {
+		// TODO Auto-generated method stub
+		return isMutable;
+	}
 
 }

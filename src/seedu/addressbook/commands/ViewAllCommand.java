@@ -18,7 +18,7 @@ public class ViewAllCommand extends Command {
             + "Example: " + COMMAND_WORD + " 1";
 
     public static final String MESSAGE_VIEW_PERSON_DETAILS = "Viewing person: %1$s";
-
+    public static final boolean isMutable = false;
 
     public ViewAllCommand(int targetVisibleIndex) {
         super(targetVisibleIndex);
@@ -37,4 +37,11 @@ public class ViewAllCommand extends Command {
             return new CommandResult(Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
         }
     }
+
+
+	@Override
+	public boolean isMutating() {
+		// TODO Auto-generated method stub
+		return isMutable;
+	}
 }

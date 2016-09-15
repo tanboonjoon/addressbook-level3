@@ -11,7 +11,7 @@ import seedu.addressbook.data.person.UniquePersonList.PersonNotFoundException;
 public class DeleteCommand extends Command {
 
     public static final String COMMAND_WORD = "delete";
-
+    public static final boolean isMutable = true;
     public static final String MESSAGE_USAGE = COMMAND_WORD + ":\n" 
             + "Deletes the person identified by the index number used in the last person listing.\n\t"
             + "Parameters: INDEX\n\t"
@@ -38,5 +38,12 @@ public class DeleteCommand extends Command {
             return new CommandResult(Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK);
         }
     }
+
+
+	@Override
+	public boolean isMutating() {
+		// TODO Auto-generated method stub
+		return isMutable;
+	}
 
 }

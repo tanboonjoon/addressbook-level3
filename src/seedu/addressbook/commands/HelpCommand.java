@@ -7,7 +7,7 @@ package seedu.addressbook.commands;
 public class HelpCommand extends Command {
 
     public static final String COMMAND_WORD = "help";
-
+    public static final boolean isMutable = false;
     public static final String MESSAGE_USAGE = COMMAND_WORD + ":\n" +"Shows program usage instructions.\n\t"
             + "Example: " + COMMAND_WORD;
 
@@ -27,4 +27,10 @@ public class HelpCommand extends Command {
     public CommandResult execute() {
         return new CommandResult(MESSAGE_ALL_USAGES);
     }
+
+	@Override
+	public boolean isMutating() {
+		// TODO Auto-generated method stub
+		return isMutable;
+	}
 }
