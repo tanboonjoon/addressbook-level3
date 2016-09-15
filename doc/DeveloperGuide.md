@@ -44,9 +44,16 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | new user | see usage instructions | refer to instructions when I forget how to use the App
 `* * *` | user | add a new person |
 `* * *` | user | delete a person | remove entries that I no longer need
-`* * *` | user | find a person by name | locate details of persons without having to go through the entire list
-`* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
+`* * *` | user | find a person by name | locate details of persons without 
+`* * *` | user | modify my information | 
+`* *` | admin | make sure addressbook are sorted by name | 
+`* * ` | user | able who can view my information | 
+`* * ` | admin | make sure user can only modify their own information | 
+having to go through the entire list
+`* *` | user | hide [private contact details](#private-contact-detail) by 
+default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
+`*` | user | see my history of past commands i have entered and choose them| so i do not have to renact each command everytime
 
 
 ## Appendix B : Use Cases
