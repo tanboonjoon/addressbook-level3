@@ -97,6 +97,12 @@ Use case ends.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
+5. Each command must be executed within 5 seconds
+6. Should be able to be run using different languages(Japanese,Korean)
+7. Should allow enhancement at all time
+8. Should be able to recover it data following a natural or human-induced
+9. Should be able to last for 10 year become it become obsolete 
+disaster
 
 ## Appendix D : Glossary
 
