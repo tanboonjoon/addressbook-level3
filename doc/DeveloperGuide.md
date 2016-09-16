@@ -76,8 +76,7 @@ Use case ends.
 4.User will request to change a tags from the lists
 5.Addressbook will prompt for new name
 6.User will enter new name for the tag
-7.Addressbook will change the tag name
-8.Addressbook will show the 'oldname change to newname'
+7.Addressbook will show the 'oldname change to newname'
 Use case ends.
 
 **Extensions**
